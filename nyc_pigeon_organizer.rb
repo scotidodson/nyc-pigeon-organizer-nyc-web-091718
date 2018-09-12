@@ -20,10 +20,13 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(pigeon_data)
-  pigeon_data.each_with_object
+  pigeon_data.each_with_object({}) { |
 
   puts organized_pigeons
   binding.pry
 end
+
+%w(foo bar).each_with_object({}) { |str, hsh| hsh[str] = str.upcase }
+# => {'foo' => 'FOO', 'bar' => 'BAR'}
 
 nyc_pigeon_organizer(pigeon_data)
