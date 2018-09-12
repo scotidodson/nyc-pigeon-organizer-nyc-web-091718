@@ -26,6 +26,8 @@ def nyc_pigeon_organizer(pigeon_data)
         pigeons.each do |name|
 
   puts name
+  puts attribute
+  puts pigeons
   binding.pry
         end 
       end
