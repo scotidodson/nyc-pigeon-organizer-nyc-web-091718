@@ -22,12 +22,8 @@ pigeon_data = {
 def nyc_pigeon_organizer(pigeon_data)
   pigeon_data.each do |color, color_hash|
       color_hash.each do |attribute, pigeons|
-        puts attribute
-        binding.pry
         pigeons.each do |name|
 
-  puts attribute
-  puts pigeons
   puts name
   binding.pry
         
