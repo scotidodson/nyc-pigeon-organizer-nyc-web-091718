@@ -21,7 +21,7 @@ pigeon_data = {
 
 def nyc_pigeon_organizer(pigeon_data)
   pigeon_list = {}
-  pigeon_data.each_with_object({}) do |color, color_hash|
+  pigeon_data.each_with_object({}) { |(a, b), {}|
       color_hash.each do |attribute, pigeons|
         pigeons.each do |name|
           result[name] ||= {}
