@@ -20,10 +20,10 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(pigeon_data)
-  pigeon_data.each do |new_key|
+  pigeon_data[0].each do |new_key|
     # new_key = color
-    new_key.each do |x|
-      puts x
+    #new_key.each do |x|
+      puts new_key
       binding.pry
       # hash_two = hash of colors and name pairs
       
@@ -34,7 +34,7 @@ def nyc_pigeon_organizer(pigeon_data)
   puts pigeons
   puts name
   binding.pry
-        end 
+        #end 
       end
     end
   end
