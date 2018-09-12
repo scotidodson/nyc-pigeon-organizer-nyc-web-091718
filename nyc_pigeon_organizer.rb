@@ -27,12 +27,8 @@ def nyc_pigeon_organizer(pigeon_data)
           pigeon_list[name] ||= {}
           pigeon_list[name][a] ||= []
           pigeon_list[name][a] << attribute.to_s
-  puts pigeon_list
-  binding.pry
-        
       end
     end
   }
 end
 
-nyc_pigeon_organizer(pigeon_data)
