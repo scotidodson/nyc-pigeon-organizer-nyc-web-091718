@@ -22,16 +22,18 @@ pigeon_data = {
 def nyc_pigeon_organizer(pigeon_data)
   pigeon_data.each do |new_key|
     # new_key = color
-    hash.each do |hash_two, x|
+    new_key.each do |hash_two|
       # hash_two = hash of colors and name pairs
       
-      #hash_two.each do |attribute, pigeons|
-        #pigeons.each do |name|
+      hash_two.each do |attribute, pigeons|
+        pigeons.each do |name|
 
-  puts x
+  puts attribute
+  puts pigeons
+  puts name
   binding.pry
-        #end 
-      #end
+        end 
+      end
     end
   end
 end
