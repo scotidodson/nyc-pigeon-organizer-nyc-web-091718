@@ -20,7 +20,7 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(pigeon_data)
-  pigeon_data[0].each do |new_key|
+  pigeon_data.each do |new_key|
     # new_key = color
     #new_key.each do |x|
       puts new_key
