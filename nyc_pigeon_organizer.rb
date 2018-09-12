@@ -26,8 +26,8 @@ def nyc_pigeon_organizer(pigeon_data)
         pigeons.each do |name|
           pigeon_list[name] ||= {}
           pigeon_list[name][a] ||= []
-          pigeon_list[name][a] << value.to_s
-  puts name
+          pigeon_list[name][a] << attribute.to_s
+  puts pigeon_list
   binding.pry
         
       end
