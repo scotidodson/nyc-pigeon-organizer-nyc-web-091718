@@ -28,9 +28,9 @@ def nyc_pigeon_organizer(pigeon_data)
   puts organized_pigeons
   binding.pry
         end 
-end
-end
-end
+      end
+    end
+  end
 end
 
 nyc_pigeon_organizer(pigeon_data)
