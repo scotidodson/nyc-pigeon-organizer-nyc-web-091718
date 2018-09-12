@@ -21,12 +21,12 @@ pigeon_data = {
 
 def nyc_pigeon_organizer(pigeon_data)
   pigeon_list = {}
-  pigeon_data.each_with_object({}) { |(a, b), {}|
-      color_hash.each do |attribute, pigeons|
+  pigeon_data.each_with_object({}) { |(a, b), pigeon_list|
+      b.each do |attribute, pigeons|
         pigeons.each do |name|
-          result[name] ||= {}
-          result[name][key] ||= []
-          result[name][key] << value.to_s
+          pigeon_list[name] ||= {}
+          pigeon_list[name][a] ||= []
+          pigeon_list[name][a] << value.to_s
   puts name
   binding.pry
         
