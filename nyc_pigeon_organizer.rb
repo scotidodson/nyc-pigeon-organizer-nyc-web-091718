@@ -23,13 +23,13 @@ def nyc_pigeon_organizer(pigeon_data)
   pigeon_data.each do |hash|
     hash.each do |new_key, hash_two|
       hash_two.each do |attribute, pigeons|
-        pigeons.each do |name|
+        #pigeons.each do |name|
 
   puts name
   puts attribute
   puts pigeons
   binding.pry
-        end 
+        #end 
       end
     end
   end
