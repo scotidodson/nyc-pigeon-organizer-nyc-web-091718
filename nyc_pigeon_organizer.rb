@@ -20,22 +20,17 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(pigeon_data)
-  pigeon_data.each_with_object({}) do |hash|
-    hash.each_with_object({}) do |a, b|
-      puts b
-      binding.pry
-end 
-  end 
+  pigeon_data.each do |hash|
+    hash.each do |new_key, hash_two|
+      hash_two.each do |attribute, pigeons|
+        pigeons.each do |name|
+
+  puts organized_pigeons
+  binding.pry
+        end 
+end
+end
+end
 end
 
-#%w(foo bar).each_with_object({}) { |str, hsh| hsh[str] = str.upcase }
-## => {'foo' => 'FOO', 'bar' => 'BAR'}
-
 nyc_pigeon_organizer(pigeon_data)
-
-
-
-
-
-
-
