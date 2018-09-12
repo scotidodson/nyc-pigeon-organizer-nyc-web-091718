@@ -20,10 +20,11 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(pigeon_data)
+  pigeon_list = {}
   pigeon_data.each do |color, color_hash|
       color_hash.each do |attribute, pigeons|
         pigeons.each do |name|
-
+          pigeon_list[name] = {}
   puts name
   binding.pry
         
