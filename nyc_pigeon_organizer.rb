@@ -25,7 +25,7 @@ def nyc_pigeon_organizer(pigeon_data)
       hash_two.each do |attribute, pigeons|
         pigeons.each do |name|
 
-  puts organized_pigeons
+  puts name
   binding.pry
         end 
       end
