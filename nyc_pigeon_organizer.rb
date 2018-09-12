@@ -20,11 +20,11 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(pigeon_data)
-  pigeon_data.each_with_object({}) do |a, b| 
-    
-    puts b
-
-  binding.pry
+  pigeon_data.each_with_object({}) do |hash|
+    hash.each_with_object({}) do |a, b|
+      puts a
+      binding.pry
+end 
   end 
 end
 
