@@ -20,28 +20,8 @@ pigeon_data = {
 }
 
 def nyc_pigeon_organizer(pigeon_data)
-  organized_pigeons = {}
-  colors = pigeon_data[:color].keys
-  genders = pigeon_data[:gender].keys
-  locations = pigeon_data[:lives].keys
-  
-  pigeon_data.each do |attribute, hash|
-    
-    hash.each do |attribute_two, pigeon|
-# attribute_two = purple
+  pigeon_data.each_with_object
 
-      pigeon.each do |name|
-        organized_pigeons[name] = {}
-        if colors.include?(attribute_two)
-          organized_pigeons[name][:color] puts attribute_two
-        elsif genders.include?(attribute_two)
-          organized_pigeons[name][:gender].push(attribute_two)
-        else
-          organized_pigeons[name][:lives].push(attribute_two)
-        end
-      end
-    end 
-  end 
   puts organized_pigeons
   binding.pry
 end
