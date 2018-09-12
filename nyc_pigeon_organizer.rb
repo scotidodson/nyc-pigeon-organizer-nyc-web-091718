@@ -24,7 +24,9 @@ def nyc_pigeon_organizer(pigeon_data)
   pigeon_data.each do |color, color_hash|
       color_hash.each do |attribute, pigeons|
         pigeons.each do |name|
-          pigeon_list[name] = {}
+          result[name] ||= {}
+          result[name][key] ||= []
+          result[name][key] << value.to_s
   puts name
   binding.pry
         
